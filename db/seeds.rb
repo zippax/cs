@@ -5,5 +5,5 @@
 #
   # Category.create([{ name: 'Services' }, { name: 'Software' }, { name: 'Training' }])
   # SubCategory.create([{ name: 'Web Design', category_id: 1 }, {name: 'Marketing', category_id: 1 }, { name: 'Programming', category_id: 1 }])
-  SubCategory.create([{ name: 'Solid Works 2018', category_id: 2 }, {name: '3d Max Studio', category_id: 2 }, { name: 'Firefox', category_id: 2 }])
+  SubCategory.create([{ name: 'Solid Works 2018', category_id: 2 }, {name: '3d Max Studio', category_id: 2 }, { name: 'AutoCAD 2017', category_id: 2 },  { name: 'MAMP Servier', category_id: 2 }])
 #   Character.create(name: 'Luke', movie: movies.first)
