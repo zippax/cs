@@ -1,0 +1,23 @@
+<div class="nav">
+  <div class="nav985">
+    <div class="logo">
+      <%= image_tag 'logo.png' %>
+    </div>
+    <div class="categories">
+      <ul class="dropdown">
+        <% @categories.each do |category| %>
+          <li class="<% if category.SubCategories.count > 0 %>drop<% end %> main">
+            <span><%= category.name %></span>
+              <ul class="subCategory" id="slide">
+                <% category.SubCategories.each do |sub| %>
+                  <li class="subLi" id="sub-<%= sub.id %>"><%= sub.name %></li>
+                <% end %>
+              </ul>
+          </li>
+        <% end %>
+          <li class="main loginIcon"><%= fa_icon "lock" %>Login</li>
+      </div>
+      </ul>
+    </div>
+  </div>
+</div>

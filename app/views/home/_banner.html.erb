@@ -1,0 +1,24 @@
+<div class="banner">
+  <div class="first">
+    Welcome to CompuSOFT
+  </div>
+  <div class="second">
+    The engineering software
+  </div>
+  <div class="third">
+  we offer provides solutions to meet any Design and Analysis challenge you or your company might face. Our Inventory includes state-of-the-art software for Mechanical, Civil/Structural, Electrical and Production Engineering and their Drafting disciplines.
+  </div>
+  <div class="slideDown">
+      <%= image_tag 'http://www.gaby-moreno.com/administrator/public_html/css/ionicons/src/android-arrow-down.svg', class: 'goDown'%>
+  </div>
+</div>
+
+<%= content_for :javascript do %>
+  <script type="text/javascript">
+    $(".goDown").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".content").offset().top - 100
+      }, 500);
+    });
+  </script>
+<% end %>

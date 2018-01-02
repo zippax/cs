@@ -1,0 +1,55 @@
+<div class="content">
+  <div class="info" id="firstText">
+    <div class="icon">
+      <%= image_tag 'software' %>
+    </div>
+    <div class="content contentRight">
+      <span></span>
+      <h1>Software</h1>
+      <p>Packages are designed in such a manner that they cater all the possible software needs of any engineering firm. Our aim is to make engineering easy and we are committed to this by not only providing the ultimate solution but superior quality Technical support. Our Software list includes world’s finest software for all Engineering Disciplines.</p>
+      <!-- <div class="moreRight moreDecor">Read More</div> -->
+    </div>
+  </div>
+  <div class="info">
+    <div class="content">
+      <span></span>
+      <h1>Training</h1>
+      <p>Technical Trainings in this era is necessary to polish your skills. CompuSOFT Training Center caters this need in a very fine manner. Our trainer’s portfolio includes industry leading trainers with a massive field experience. Our state of art classes are one of its kind with full technology equipped equipment our classes offers a learning environment to the trainees.</p>
+      <!-- <div class="more moreDecor">Read More</div> -->
+    </div>
+    <div class="icon iconRight">
+      <%= image_tag 'training' %>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="icon">
+      <%= image_tag 'projects' %>
+    </div>
+    <div class="content contentRight">
+      <span></span>
+      <h1>Projects</h1>
+      <p>Outsourcing some engineering projects can be the quickest and most cost efficient route to a solution, our Engineering Department comprises of Engineers who have lead the industry for almost 3 decades. Our Engineering services are in all disciplines primarily Electrical, Mechanical, Instrumental, Process Engineering and others.</p>
+      <!-- <div class="moreRight moreDecor">Read More</div> -->
+    </div>
+  </div>
+  <div class="info">
+    <div class="content">
+      <span></span>
+      <h1>Consulting</h1>
+      <p>Our consulting domain includes world class Consultants from different Industries, renowned PHDs and Engineers with 3 decade of experience. Our Consulting is not only limited to Engineering but also offers Business Planning and Strategies.</p>
+      <!-- <div class="more moreDecor">Read More</div> -->
+    </div>
+    <div class="icon iconRight">
+      <%= image_tag 'cons' %>
+    </div>
+  </div>
+</div>
+
+
+<%= content_for :javascript do %>
+  <script type="text/javascript">
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.info', { duration: 1000 });
+  </script>
+<% end %>
