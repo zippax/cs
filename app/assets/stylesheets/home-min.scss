@@ -1,0 +1,134 @@
+@media (max-width : 890px) {
+  .banner{
+    margin-top: 100px;
+    background-position: center -270px;
+
+    .first{
+      font-size: 20px;
+      margin-top: -50px
+    }
+    .second{
+      font-size: 22px;
+      color: #8c732d;
+      text-shadow: none;
+      background: #f3cc4c;
+      width: 100%;
+      padding: 10px;
+      max-width: 700px;
+      opacity: 0.89;
+    }
+    .third{
+      font-size: 16px;
+      // margin-top: -15px;
+      margin-top: 0px;
+      text-align: justify;
+      max-width: 700px;
+      opacity: 0.89;
+    }
+    .slideDown{
+      display: none;
+    }
+  }
+  .nav{
+    .categories{
+      display: none;
+    }
+  }
+
+  // INFO CARDS
+  .content{
+    width: 100%;
+    max-width: 985px;
+    margin: 0 auto;
+    .info{
+      display: flex;
+      flex-direction: column;
+      font-family: 'Heebo', sans-serif;
+      font-size: 15px;
+      width: 100%;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      box-shadow: 2px 2px 2px #ddd;
+      .icon{
+        // display: flex;
+        display: none;
+        text-align: left !important;
+        position: relative;
+        flex-wrap: wrap;
+        img{
+          // display: none;
+        }
+      }
+      .iconRight{
+        text-align: right;
+      }
+      .content{
+        order:1;
+        overflow-x: hidden;
+        display: flex;
+        position: relative;
+        background: #fff;
+        h1{
+          text-transform: capitalize;
+          position: absolute;
+          display: block;
+        }
+        p{
+          margin-top: 0px;
+          align-self: center;
+        }
+        span{
+          width: 150px;
+          height: 20px;
+          background: #ddd;
+          position: absolute;
+          top: 75px;
+          left: 15px;
+          margin-top:-50px;
+        }
+        .more{
+          display: inline-block;
+          position: absolute;
+          color: #000;
+          font-size: 17px;
+          bottom: 0px;
+          left: 0px;
+          background: #FED94D;
+          padding: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      .moreDecor:hover{
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .contentRight{
+        .moreRight{
+          display: inline-block;
+          position: absolute;
+          color: #000;
+          font-size: 17px;
+          padding: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          float: right;
+          bottom: 0px;
+          right: 0px;
+          background: #FED94D;
+        }
+      }
+    }
+    .info:hover{
+      cursor: pointer;
+      // opacity: 1;
+    }
+    .info:hover  .content{
+      background: #fff;
+      // background: #fff url('waterMark.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}

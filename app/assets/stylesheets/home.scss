@@ -158,7 +158,7 @@
     font-size: 48px;
     z-index: 1;
     text-shadow: 1px 1px 1px #000;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril Fatface', sans-serif;
     text-transform: uppercase;
     color: #fff;
   }
@@ -222,12 +222,14 @@
       display: flex;
       position: relative;
       background: #fff;
-      height: 520px;
+      // height: 520px;
+      padding-top: 70px;
       background-size: cover;
       h1{
         text-transform: capitalize;
         position: absolute;
         display: block;
+        top: 0;
       }
       p{
         margin-top: 50px;
@@ -240,6 +242,7 @@
         position: absolute;
         top: 75px;
         left: 15px;
+        margin-top:-30px;
       }
       .more{
         display: inline-block;
@@ -287,6 +290,13 @@
 }
 .footer{
   width: 100%;
-  height: 300px;
-  background: #F6F5F4;
+  height: 100px;
 }
+
+
+
+
+
+
+// Mobile Styling
+@import 'home-min.scss';
