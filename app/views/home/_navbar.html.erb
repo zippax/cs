@@ -6,10 +6,11 @@
     <div class="categories">
       <ul class="dropdown">
         <% @categories.each do |category| %>
-          <li class="<% if category.SubCategories.count > 0 %>drop<% end %> main">
+        <%@subCategory = Category.where(parent_id: category.id)%>
+          <li class="main <% if @subCategory.count > 0 %>drop<% end %>">
             <span><%= category.name %></span>
               <ul class="subCategory" id="slide">
-                <% category.SubCategories.each do |sub| %>
+                <% @subCategory.each do |sub| %>
                   <li class="subLi" id="sub-<%= sub.id %>"><%= sub.name %></li>
                 <% end %>
               </ul>

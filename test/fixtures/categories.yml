@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  parent_id: 1
 
 two:
   name: MyString
+  parent_id: 1
