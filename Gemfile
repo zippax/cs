@@ -18,6 +18,7 @@ gem 'jquery-rails'
 gem 'animate-rails'
 gem 'font-awesome-rails'
 
+# Trestle
 gem 'trestle'
 gem 'trestle-simplemde'
 
